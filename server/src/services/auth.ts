@@ -24,7 +24,7 @@ export const authenticateToken = ({ req }: ExpressContext) => {
       return { user: { _id, username, email } };
     } catch (err) {
       console.log('Invalid token');
-      return { user: null };
+     
     }
   }
 
